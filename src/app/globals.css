@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #F8F9FA;
+  --color-foreground: #0F172A;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1E293B;
+
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #0F172A;
+
+  --color-primary: #1080A0;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #E1F1F6;
+  --color-secondary-foreground: #1080A0;
+
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #64748B;
+
+  --color-accent: #FFFBEB;
+  --color-accent-foreground: #B45309;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FAF9F6;
+
+  --color-border: #E2E8F0;
+  --color-input: #E2E8F0;
+  --color-ring: #1080A0;
+
+  --color-chart-1: #1080A0;
+  --color-chart-2: #0D6E8A;
+  --color-chart-3: #E1F1F6;
+  --color-chart-4: #64748B;
+  --color-chart-5: #94A3B8;
+
+  --color-sidebar: #FFFFFF;
+  --color-sidebar-foreground: #1E293B;
+  --color-sidebar-primary: #1080A0;
+  --color-sidebar-primary-foreground: #FFFFFF;
+  --color-sidebar-accent: #F8F9FA;
+  --color-sidebar-accent-foreground: #1080A0;
+  --color-sidebar-border: #E2E8F0;
+  --color-sidebar-ring: #1080A0;
+
+  /* Brand Specific Tokens */
+  --color-brand-primary: #1080A0;
+  --color-brand-dark: #0D6E8A;
+  --color-brand-light: #E1F1F6;
+  --color-surface: #FFFFFF;
+  --color-text-heading: #0F172A;
+  --color-text-body: #64748B;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2.5rem;
+
+  --shadow-medical: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-glass: 0 8px 32px 0 rgba(16, 128, 160, 0.08);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #E2E8F0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-body);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-heading);
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 1.125rem;
+  }
+
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 1400px;
+  }
+
+  .glass-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+  }
+
+  .medical-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    transition: all 0.3s ease;
+  }
+
+  .medical-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medical);
+    border-color: var(--color-brand-light);
+  }
+
+  .btn-primary {
+    background: linear-gradient(to right, var(--color-brand-primary), var(--color-brand-dark));
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+
+  .badge-accent {
+    background-color: var(--color-accent);
+    color: var(--color-accent-foreground);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #F8F9FA;
+    --foreground: #0F172A;
+    --card: #FFFFFF;
+    --card-foreground: #1E293B;
+    --popover: #FFFFFF;
+    --popover-foreground: #0F172A;
+    --primary: #1080A0;
+    --primary-foreground: #FFFFFF;
+    --secondary: #E1F1F6;
+    --secondary-foreground: #1080A0;
+    --muted: #F1F5F9;
+    --muted-foreground: #64748B;
+    --accent: #FFFBEB;
+    --accent-foreground: #B45309;
+    --destructive: #EF4444;
+    --destructive-foreground: #FAF9F6;
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #1080A0;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
