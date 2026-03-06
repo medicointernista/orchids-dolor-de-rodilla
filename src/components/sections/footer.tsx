@@ -2,16 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { 
-  Facebook, 
-  Instagram, 
-  Youtube, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  ChevronUp 
+import {
+  Facebook,
+  Instagram,
+  Youtube,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ChevronUp
 } from 'lucide-react';
+import { SiTiktok } from 'react-icons/si';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -49,14 +50,23 @@ export default function Footer() {
                 >
                   <Instagram size={18} />
                 </a>
-                <a 
-                  href="https://www.youtube.com/@tuinternistafavorito" 
+                <a
+                  href="https://www.youtube.com/@tuinternistafavorito"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F8F9FA] border border-[#E2E8F0] text-[#1080A0] transition-all hover:bg-[#1080A0] hover:text-white"
                   aria-label="Youtube"
                 >
                   <Youtube size={18} />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@tuinternistafavorito"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F8F9FA] border border-[#E2E8F0] text-[#1080A0] transition-all hover:bg-[#1080A0] hover:text-white"
+                  aria-label="TikTok"
+                >
+                  <SiTiktok size={18} />
                 </a>
               </div>
             </div>
@@ -111,16 +121,32 @@ export default function Footer() {
                         <div className="text-[#1080A0]">
                           <Mail size={20} />
                         </div>
-                          <a href="mailto:tuinternistafavorito@gmail.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
-                            tuinternistafavorito@gmail.com
+                          <a href="mailto:consulta@internistamedellin.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
+                            consulta@internistamedellin.com
                           </a>
                       </li>
                       <li className="flex items-center gap-4">
                         <div className="text-[#1080A0]">
                           <Mail size={20} />
                         </div>
-                          <a href="mailto:tuinternistaresponde@gmail.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
-                            tuinternistaresponde@gmail.com
+                          <a href="mailto:asistente@internistamedellin.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
+                            asistente@internistamedellin.com
+                          </a>
+                      </li>
+                      <li className="flex items-center gap-4">
+                        <div className="text-[#1080A0]">
+                          <Mail size={20} />
+                        </div>
+                          <a href="mailto:estudios@internistamedellin.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
+                            estudios@internistamedellin.com
+                          </a>
+                      </li>
+                      <li className="flex items-center gap-4">
+                        <div className="text-[#1080A0]">
+                          <Mail size={20} />
+                        </div>
+                          <a href="mailto:procedimientos@internistamedellin.com" className="text-base text-[#64748B] hover:text-[#1080A0] transition-colors">
+                            procedimientos@internistamedellin.com
                           </a>
                       </li>
                   </ul>
@@ -132,11 +158,8 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="block text-[10px] font-bold text-[#1080A0] uppercase tracking-wider mb-2">Horario de Atención</span>
-                    <p className="text-sm text-[#64748B] mb-1">
-                      Lunes a viernes: 7:00 am - 12:00 pm
-                    </p>
                     <p className="text-sm text-[#64748B]">
-                      Lunes a viernes: 1:30 pm - 5:00 pm
+                      Lunes a viernes: 8:00 am - 5:00 pm
                     </p>
                   </div>
                 </div>
