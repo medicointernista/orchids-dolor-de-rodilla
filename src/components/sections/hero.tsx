@@ -47,14 +47,14 @@ const HeroSection = () => {
 
                 {/* CTAs */}
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row w-full sm:w-auto animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-                    <a 
-                      href="https://api.whatsapp.com/send?phone=573053979628&text=Hola%20vi%20el%20sitio%20en%20Google%2C%20quiero%20informaci%C3%B3n%20para%20agendar%20una%20cita." 
+                    <a
+                      href="https://api.whatsapp.com/send?phone=573053979628&text=Hola%20vi%20el%20sitio%20en%20Google%2C%20quiero%20informaci%C3%B3n%20para%20agendar%20una%20cita."
                       className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-gradient-to-r from-[#1080A0] to-[#0D6E8A] px-10 py-4 text-[15px] font-bold text-white shadow-[0_4px_14px_0_rgba(16,128,160,0.39)] transition-all hover:scale-[1.02] hover:opacity-95 active:scale-95"
                     >
                       ¡AGENDA TU ALIVIO HOY!
                     </a>
-                    <a 
-                      href="tel:+573053979628" 
+                    <a
+                      href="tel:+573011505174"
                       className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[#E1F1F6] px-10 py-4 text-[15px] font-bold text-[#1080A0] transition-all hover:bg-[#D4EAF1] hover:scale-[1.02] active:scale-95"
                     >
                       <PhoneCall className="w-[18px] h-[18px]" />

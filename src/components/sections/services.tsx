@@ -12,7 +12,7 @@ const servicesData = [
         title: "Infiltración para Rodillas",
         description: "Tratamiento no quirúrgico con ácido hialurónico que actúa como lubricante natural, reduciendo la fricción y el dolor al caminar.",
         image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/Tratamiento-de-Rodilla-1769358004016.jpg?width=8000&height=8000&resize=contain",
-        whatsappLink: "https://api.whatsapp.com/send?phone=573053979628&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Infiltraci%C3%B3n%20para%20Rodillas."
+        whatsappLink: "https://api.whatsapp.com/send?phone=573011505174&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Infiltraci%C3%B3n%20para%20Rodillas."
       }
 ];
 
