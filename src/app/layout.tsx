@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   robots: "index, follow",
   icons: {
     icon: [
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/logotipo-1769358123345.png?width=32&height=32&resize=contain", sizes: "32x32", type: "image/png" },
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/logotipo-1769358123345.png?width=16&height=16&resize=contain", sizes: "16x16", type: "image/png" }
+      { url: "/Favicon_willmer_obregon.png", sizes: "32x32", type: "image/png" },
+      { url: "/Favicon_willmer_obregon.png", sizes: "16x16", type: "image/png" }
     ],
-    apple: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/logotipo-1769358123345.png?width=180&height=180&resize=contain",
+    apple: "/Favicon_willmer_obregon.png",
   }
 };
 
