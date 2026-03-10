@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Info, Droplets, Heart, Stethoscope, Clock, Activity } from 'lucide-react';
+import { CircleCheck as CheckCircle2, Info, Droplets, Heart, Stethoscope, Clock, Activity } from 'lucide-react';
 
 const Viscosuplementacion = () => {
   const procedureSteps = [
