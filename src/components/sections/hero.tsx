@@ -58,7 +58,7 @@ const HeroSection = () => {
                       className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[#E1F1F6] px-10 py-4 text-[15px] font-bold text-[#1080A0] transition-all hover:bg-[#D4EAF1] hover:scale-[1.02] active:scale-95"
                     >
                       <PhoneCall className="w-[18px] h-[18px]" />
-                      ¡LLAMA AHORA Y ASEGURA TU CITA!
+                      ¡LLAMA AHORA!
                     </a>
                   </div>
 
