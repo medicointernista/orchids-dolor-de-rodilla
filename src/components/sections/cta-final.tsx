@@ -37,7 +37,7 @@ export default function CtaFinal() {
                       className="inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-2xl bg-[#1080A0] px-10 py-5 text-[16px] font-bold text-white shadow-[0_10px_15px_-3px_rgba(16,128,160,0.3)] transition-all hover:scale-[1.02] hover:bg-[#0D6E8A] active:scale-95"
                     >
                       <MessageSquare className="h-6 w-6 fill-current" />
-                      ¡AGENDA TU ALIVIO HOY!
+                      ¡LLAMA AHORA!
                     </a>
 
                     <a

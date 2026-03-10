@@ -51,7 +51,7 @@ const HeroSection = () => {
                       href="https://api.whatsapp.com/send?phone=573053979628&text=Hola%20vi%20el%20sitio%20en%20Google%2C%20quiero%20informaci%C3%B3n%20para%20agendar%20una%20cita."
                       className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-gradient-to-r from-[#1080A0] to-[#0D6E8A] px-10 py-4 text-[15px] font-bold text-white shadow-[0_4px_14px_0_rgba(16,128,160,0.39)] transition-all hover:scale-[1.02] hover:opacity-95 active:scale-95"
                     >
-                      ¡AGENDA TU ALIVIO HOY!
+                      ¡LLAMA AHORA!
                     </a>
                     <a
                       href="tel:+573011505174"
@@ -87,10 +87,10 @@ const HeroSection = () => {
             <figure className="relative overflow-hidden rounded-[2rem] border border-[#E2E8F0] bg-white shadow-[0_20px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.05)] transition-transform duration-500 hover:scale-[1.01]">
               <div className="relative h-[400px] w-full md:h-[550px]">
                       <Image
-                        alt="Dr. Willmer Obregón - Especialista en tratamiento de rodilla con ácido hialurónico en Medellín"
+                        alt="Tratamiento de infiltración de rodilla con ácido hialurónico - Procedimiento no quirúrgico"
                         fill
                         className="object-cover"
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/Tratamiento-de-Rodilla-hero-1769357866828.jpg?width=8000&height=8000&resize=contain"
+                        src="/infiltracion-rodilla.jpg"
                         priority
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
