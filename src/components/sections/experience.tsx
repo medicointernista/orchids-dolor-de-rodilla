@@ -1,13 +1,5 @@
 import React from 'react';
-import { 
-  CheckCircle2, 
-  Stethoscope, 
-  Target, 
-  Heart, 
-  Users, 
-  GraduationCap, 
-  Award 
-} from 'lucide-react';
+import { CircleCheck as CheckCircle2, Stethoscope, Target, Heart, Users, GraduationCap, Award } from 'lucide-react';
 
 const expertiseItems = [
   "Tratamiento para dolor de rodilla",
