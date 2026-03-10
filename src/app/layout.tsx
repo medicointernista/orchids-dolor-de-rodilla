@@ -5,15 +5,43 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Internista en Medellín | Dr. Willmer Obregón",
-  description: "Médico Internista en Medellín especializado en viscosuplementación de rodilla y medicina interna. ¡Agenda tu cita hoy mismo para mejorar tu salud! 🏥 👨‍⚕️ ✅",
+  metadataBase: new URL('https://www.drwillmerobregon.com'),
+  title: "Internista en Medellín | Dr. Willmer Obregón - Tratamiento de Rodilla",
+  description: "Médico Internista en Medellín especializado en viscosuplementación de rodilla con ácido hialurónico. Tratamiento no quirúrgico para osteoartritis. Agenda tu cita hoy mismo.",
+  keywords: "internista medellín, tratamiento rodilla medellín, viscosuplementación, ácido hialurónico, osteoartritis, dolor de rodilla, médico internista, dr willmer obregón",
   robots: "index, follow",
+  authors: [{ name: "Dr. Willmer Obregón" }],
+  openGraph: {
+    title: "Dr. Willmer Obregón - Internista Especialista en Rodilla | Medellín",
+    description: "Tratamiento no quirúrgico para dolor de rodilla con ácido hialurónico. Más de 15 años de experiencia en Medellín.",
+    url: "https://www.drwillmerobregon.com",
+    siteName: "Dr. Willmer Obregón - Internista",
+    locale: "es_CO",
+    type: "website",
+    images: [
+      {
+        url: "/Favicon_willmer_obregon.png",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Willmer Obregón - Internista en Medellín"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Willmer Obregón - Internista Especialista en Rodilla",
+    description: "Tratamiento no quirúrgico para dolor de rodilla con ácido hialurónico en Medellín",
+    images: ["/Favicon_willmer_obregon.png"]
+  },
   icons: {
     icon: [
       { url: "/Favicon_willmer_obregon.png", sizes: "32x32", type: "image/png" },
       { url: "/Favicon_willmer_obregon.png", sizes: "16x16", type: "image/png" }
     ],
     apple: "/Favicon_willmer_obregon.png",
+  },
+  alternates: {
+    canonical: "https://www.drwillmerobregon.com"
   }
 };
 
@@ -23,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <Script
           id="gtm-script"
@@ -34,6 +62,28 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MTRKGD87');`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Physician",
+              "name": "Dr. Willmer Obregón",
+              "image": "/Favicon_willmer_obregon.png",
+              "description": "Médico Internista especializado en tratamiento de rodilla con viscosuplementación y ácido hialurónico",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Medellín",
+                "addressRegion": "Antioquia",
+                "addressCountry": "CO"
+              },
+              "telephone": "+573011505174",
+              "medicalSpecialty": ["Internal Medicine", "Knee Treatment", "Viscosupplementation"],
+              "priceRange": "$$",
+              "url": "https://www.drwillmerobregon.com"
+            })
           }}
         />
       </head>

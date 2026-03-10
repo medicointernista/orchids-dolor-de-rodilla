@@ -49,8 +49,8 @@ const FAQSection = () => {
               <HelpCircle className="h-3.5 w-3.5" />
               Preguntas Frecuentes
             </div>
-            <h2 className="text-[2.25rem] md:text-[2.75rem] font-semibold leading-[1.2] tracking-tight text-[#0F172A] mb-8">
-              Resolvemos tus dudas
+            <h2 className="text-[1.875rem] md:text-[2.25rem] font-semibold leading-[1.2] tracking-tight text-[#0F172A] mb-8">
+              Preguntas Frecuentes sobre el Tratamiento
             </h2>
             <p className="text-lg md:text-xl leading-relaxed text-[#64748B] max-w-md">
               Encuentra respuestas a las preguntas más comunes sobre el tratamiento de viscosuplementación para el dolor de rodilla.
@@ -74,9 +74,9 @@ const FAQSection = () => {
                   className="flex w-full items-center justify-between px-6 py-5 text-left transition-colors"
                   aria-expanded={openIndex === index}
                 >
-                  <span className="text-base font-bold text-[#1E293B] flex-1 pr-4">
+                  <h3 className="text-base font-bold text-[#1E293B] flex-1 pr-4">
                     {item.question}
-                  </span>
+                  </h3>
                   <div
                     className={cn(
                       "flex h-8 w-8 items-center justify-center rounded-full bg-[#F8F9FA] transition-transform duration-300",

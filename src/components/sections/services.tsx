@@ -23,7 +23,7 @@ const ServicesSection = () => {
         {/* Header Content */}
         <div className="mb-10 md:mb-14 text-center lg:text-left">
           <h2 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight text-[#0F172A] leading-[1.2] max-w-2xl">
-            Servicios Médicos Ofrecidos
+            Servicios de Tratamiento para Articulaciones
           </h2>
           <p className="mt-4 text-[1rem] md:text-[1.125rem] leading-[1.6] text-[#64748B] max-w-3xl">
             Ofrecemos soluciones avanzadas en tratamientos de hombro y rodilla, utilizando tecnología de punta para garantizar resultados efectivos y mejorar tu calidad de vida en Medellín.
@@ -44,12 +44,14 @@ const ServicesSection = () => {
                     alt={`${service.title} en Medellín - Dr. Willmer Obregón`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
 
               {/* Content Container */}
               <div className="flex flex-col flex-grow p-8">
-                <h3 className="text-[1.5rem] font-bold text-[#1E293B] mb-4 group-hover:text-[#1080A0] transition-colors duration-300">
+                <h3 className="text-[1.25rem] font-bold text-[#1E293B] mb-4 group-hover:text-[#1080A0] transition-colors duration-300">
                   {service.title}
                 </h3>
                 <p className="text-[1rem] leading-[1.6] text-[#64748B] mb-8 flex-grow">

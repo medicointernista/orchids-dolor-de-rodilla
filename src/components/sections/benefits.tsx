@@ -57,7 +57,7 @@ const Benefits = () => {
           <div className="container mx-auto px-6 max-w-[1280px]">
             <div className="max-w-3xl mb-10 md:mb-12">
           <h2 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight text-[#0F172A] leading-[1.2]">
-            Beneficios de elegir al Dr. Willmer Obregón
+            Beneficios del Tratamiento con Ácido Hialurónico
           </h2>
           <p className="mt-4 text-[1rem] md:text-[1.125rem] leading-[1.6] text-[#64748B]">
             Ofrecemos un enfoque integral y profesional para mejorar tu calidad de vida y movilidad.

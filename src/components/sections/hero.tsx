@@ -86,12 +86,13 @@ const HeroSection = () => {
             
             <figure className="relative overflow-hidden rounded-[2rem] border border-[#E2E8F0] bg-white shadow-[0_20px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.05)] transition-transform duration-500 hover:scale-[1.01]">
               <div className="relative h-[400px] w-full md:h-[550px]">
-                      <Image 
-                        alt="Tratamiento de viscosuplementación de rodilla con ácido hialurónico en Medellín - Dr. Willmer Obregón" 
+                      <Image
+                        alt="Dr. Willmer Obregón - Especialista en tratamiento de rodilla con ácido hialurónico en Medellín"
                         fill
-                        className="object-cover" 
+                        className="object-cover"
                         src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/aaac0134-8ef3-46dc-8836-f4f2fd4b5e02/Tratamiento-de-Rodilla-hero-1769357866828.jpg?width=8000&height=8000&resize=contain"
                         priority
+                        sizes="(max-width: 768px) 100vw, 50vw"
                       />
               </div>
               
